@@ -21,7 +21,7 @@ export const colors = {
         inverse: primitives.colors.slate[950],
         focus: primitives.colors.slate[200],
     },
-    text: {
+    fg: {
         default: primitives.colors.slate[950],
         muted: primitives.colors.slate[500],
         inverse: primitives.colors.white,
