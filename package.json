@@ -1,11 +1,17 @@
 {
     "name": "noxflora",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "private": true,
     "description": "Design system created by pixellini",
     "packageManager": "pnpm@10.13.1",
     "scripts": {
         "docs:dev": "pnpm --filter @noxflora/docs dev",
-        "docs:build": "pnpm --filter @noxflora/docs build"
+        "docs:build": "pnpm --filter @noxflora/docs build",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "devDependencies": {
+        "prettier": "^3.8.3",
+        "typescript": "^6.0.3"
     }
 }
