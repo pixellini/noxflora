@@ -1,0 +1,12 @@
+{
+    "name": "@noxflora/tokens",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Design tokens for the Nox Flora design system",
+    "type": "module",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    }
+}
