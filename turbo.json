@@ -1,0 +1,15 @@
+{
+    "tasks": {
+        "build": {
+            "dependsOn": ["^build"],
+            "outputs": ["build/**", "dist/**", ".output/**"]
+        },
+        "dev": {
+            "cache": false,
+            "persistent": true
+        },
+        "lint": {
+            "dependsOn": ["^build"]
+        }
+    }
+}

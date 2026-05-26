@@ -6,4 +6,5 @@ dist
 .env.local
 .vite
 .cache
+.turbo
 coverage
