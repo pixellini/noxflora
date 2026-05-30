@@ -8,6 +8,14 @@ export function createStylesheet(contents: string): string {
     return `${generatedFileHeader}\n\n${contents}\n`
 }
 
+export function combineStylesheets(stylesheets: string[]): string {
+    const formatted = stylesheets.map(sheet => {
+        return sheet.replace(generatedFileHeader, '').trim()
+    })
+
+    return createStylesheet(formatted.join('\n\n'))
+}
+
 function normaliseSegment(segment: string): string {
     if (!/[A-Z]/.test(segment)) {
         return segment

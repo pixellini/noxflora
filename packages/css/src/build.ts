@@ -5,8 +5,10 @@ import { fileURLToPath } from 'node:url'
 import { format, resolveConfig, type Options } from 'prettier'
 
 import { buildBase } from './stylesheets/base'
+import { buildFonts } from './stylesheets/fonts'
 import { buildProse } from './stylesheets/prose'
 import { buildTokens } from './stylesheets/tokens'
+import { combineStylesheets } from './utils'
 
 const currentFilePath = fileURLToPath(import.meta.url)
 const currentDir = dirname(currentFilePath)
@@ -18,9 +20,18 @@ async function buildStylesheets(): Promise<void> {
     await mkdir(buildDir, { recursive: true })
     const prettierOptions = (await resolveConfig(buildDir)) ?? {}
 
-    await writeStylesheet('tokens.css', buildTokens(), prettierOptions)
-    await writeStylesheet('base.css', buildBase(), prettierOptions)
-    await writeStylesheet('prose.css', buildProse(), prettierOptions)
+    const tokens = buildTokens()
+    const fonts = buildFonts()
+    const base = buildBase()
+    const prose = buildProse()
+
+    await writeStylesheet('tokens.css', tokens, prettierOptions)
+    await writeStylesheet('fonts.css', fonts, prettierOptions)
+    await writeStylesheet('base.css', base, prettierOptions)
+    await writeStylesheet('prose.css', prose, prettierOptions)
+
+    const bundle = combineStylesheets([tokens, fonts, base, prose])
+    await writeStylesheet('index.css', bundle, prettierOptions)
 }
 
 async function writeStylesheet(

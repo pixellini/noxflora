@@ -5,8 +5,10 @@
     "description": "CSS variables and theme stylesheets for the Nox Flora design system",
     "type": "module",
     "exports": {
-        ".": "./build/tokens.css",
+        ".": "./build/index.css",
+        "./index.css": "./build/index.css",
         "./tokens.css": "./build/tokens.css",
+        "./fonts.css": "./build/fonts.css",
         "./base.css": "./build/base.css",
         "./prose.css": "./build/prose.css"
     },
