@@ -24,7 +24,7 @@ function normaliseSegment(segment: string): string {
     return kebabCase(segment)
 }
 
-function buildVarName(pathSegments: string[]): string {
+export function buildVarName(pathSegments: string[]): string {
     return `--nox-${[...pathSegments.map(normaliseSegment)].join('-')}`
 }
 

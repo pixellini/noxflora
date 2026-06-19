@@ -8,6 +8,7 @@
         ".": "./build/index.css",
         "./index.css": "./build/index.css",
         "./tokens.css": "./build/tokens.css",
+        "./intents.css": "./build/intents.css",
         "./fonts.css": "./build/fonts.css",
         "./base.css": "./build/base.css",
         "./prose.css": "./build/prose.css"

@@ -1,6 +1,6 @@
 import { dark, light, primitives, semantics } from '@noxflora/tokens'
 
-import { createStylesheet, toCssVars } from '../utils'
+import { createStylesheet, toCssVars } from './utils'
 
 export function buildTokens(): string {
     return createStylesheet(`:root {
