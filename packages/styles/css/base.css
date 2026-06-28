@@ -1,0 +1,52 @@
+html,
+body {
+    background-color: var(--nox-surface-default);
+    color: var(--nox-fg-default);
+    font-family: var(--nox-typography-body-base-family);
+    font-size: var(--nox-typography-body-base-size);
+    line-height: var(--nox-typography-body-base-line-height);
+}
+
+:where(.nox-base) {
+    h1 {
+        font-family: var(--nox-typography-heading-4xl-family);
+        font-size: var(--nox-typography-heading-4xl-size);
+        font-weight: var(--nox-typography-heading-4xl-weight);
+        line-height: var(--nox-typography-heading-4xl-line-height);
+    }
+
+    h2 {
+        font-family: var(--nox-typography-heading-3xl-family);
+        font-size: var(--nox-typography-heading-3xl-size);
+        font-weight: var(--nox-typography-heading-3xl-weight);
+        line-height: var(--nox-typography-heading-3xl-line-height);
+    }
+
+    h3 {
+        font-family: var(--nox-typography-heading-2xl-family);
+        font-size: var(--nox-typography-heading-2xl-size);
+        font-weight: var(--nox-typography-heading-2xl-weight);
+        line-height: var(--nox-typography-heading-2xl-line-height);
+    }
+
+    h4 {
+        font-family: var(--nox-typography-heading-xl-family);
+        font-size: var(--nox-typography-heading-xl-size);
+        font-weight: var(--nox-typography-heading-xl-weight);
+        line-height: var(--nox-typography-heading-xl-line-height);
+    }
+
+    h5 {
+        font-family: var(--nox-typography-heading-base-family);
+        font-size: var(--nox-typography-heading-base-size);
+        font-weight: var(--nox-typography-heading-base-weight);
+        line-height: var(--nox-typography-heading-base-line-height);
+    }
+    
+    h6 {
+        font-family: var(--nox-typography-heading-sm-family);
+        font-size: var(--nox-typography-heading-sm-size);
+        font-weight: var(--nox-typography-heading-sm-weight);
+        line-height: var(--nox-typography-heading-sm-line-height);
+    }
+}

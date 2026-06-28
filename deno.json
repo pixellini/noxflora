@@ -1,0 +1,28 @@
+{
+    "nodeModulesDir": "auto",
+    "workspace": [
+        "packages/tokens",
+        "packages/styles",
+        "apps/docs"
+    ],
+    "tasks": {
+        "lint": "deno task -r typecheck",
+        "format": "deno fmt",
+        "format:check": "deno fmt --check"
+    },
+    "fmt": {
+        "lineWidth": 100,
+        "indentWidth": 4,
+        "semiColons": false,
+        "singleQuote": true,
+        "proseWrap": "preserve",
+        "exclude": [
+            "**/node_modules",
+            "**/dist",
+            "**/.vite",
+            "**/.cache",
+            "**/coverage",
+            "deno.lock"
+        ]
+    }
+}

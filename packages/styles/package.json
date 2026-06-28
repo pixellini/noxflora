@@ -1,0 +1,16 @@
+{
+    "name": "@noxflora/styles",
+    "version": "0.1.0",
+    "description": "CSS stylesheets for the Nox Flora design system",
+    "exports": {
+        "./tokens.css": "./css/tokens.css",
+        "./intents.css": "./css/intents.css",
+        "./fonts.css": "./css/fonts.css",
+        "./base.css": "./css/base.css",
+        "./prose.css": "./css/prose.css"
+    },
+    "files": [
+        "*.css",
+        "fonts"
+    ]
+}
