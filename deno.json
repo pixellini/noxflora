@@ -3,9 +3,11 @@
     "workspace": [
         "packages/tokens",
         "packages/styles",
+        "packages/vue",
         "apps/docs"
     ],
     "tasks": {
+        "build": "deno task --filter @noxflora/vue build",
         "lint": "deno task -r typecheck",
         "format": "deno fmt",
         "format:check": "deno fmt --check"

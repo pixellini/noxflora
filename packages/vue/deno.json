@@ -1,0 +1,7 @@
+{
+    "tasks": {
+        "build": "deno run -A npm:vite build",
+        "dev": "deno run -A npm:vite build --watch",
+        "typecheck": "env vue-tsc --noEmit"
+    }
+}
