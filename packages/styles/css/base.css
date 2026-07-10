@@ -42,7 +42,7 @@ body {
         font-weight: var(--nox-typography-heading-base-weight);
         line-height: var(--nox-typography-heading-base-line-height);
     }
-    
+
     h6 {
         font-family: var(--nox-typography-heading-sm-family);
         font-size: var(--nox-typography-heading-sm-size);

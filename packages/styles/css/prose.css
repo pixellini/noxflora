@@ -72,12 +72,12 @@
         margin-bottom: var(--nox-spacing-md);
         padding-left: var(--nox-spacing-lg);
     }
-    
+
     li {
         margin-top: var(--nox-spacing-xs);
         margin-bottom: var(--nox-spacing-xs);
     }
-    
+
     blockquote {
         margin-top: var(--nox-spacing-lg);
         margin-bottom: var(--nox-spacing-lg);
@@ -85,7 +85,7 @@
         border-left: var(--nox-border-4) solid var(--nox-border-default);
         color: var(--nox-fg-muted);
     }
-    
+
     pre {
         margin-top: var(--nox-spacing-md);
         margin-bottom: var(--nox-spacing-md);
@@ -94,19 +94,19 @@
         border-radius: var(--nox-radius-md);
         overflow-x: auto;
     }
-    
+
     pre code {
         background: none;
         padding: 0;
         font-size: inherit;
     }
-    
+
     code {
         padding: 0.125rem 0.25rem;
         background-color: var(--nox-surface-hover);
         border-radius: var(--nox-radius-sm);
     }
-    
+
     a {
         color: var(--nox-intent-primary-default);
         text-decoration: underline;
@@ -114,31 +114,31 @@
             color: var(--nox-intent-primary-emphasis);
         }
     }
-    
+
     img {
         max-width: 100%;
         height: auto;
     }
-    
+
     table {
         width: 100%;
         border-collapse: collapse;
         margin-top: var(--nox-spacing-md);
         margin-bottom: var(--nox-spacing-md);
     }
-    
+
     th,
     td {
         padding: var(--nox-spacing-xs) var(--nox-spacing-sm);
         border: 1px solid var(--nox-border-default);
         text-align: left;
     }
-    
+
     th {
         font-weight: var(--nox-font-weight-semibold);
         background-color: var(--nox-surface-hover);
     }
-    
+
     hr {
         margin-top: var(--nox-spacing-2xl);
         margin-bottom: var(--nox-spacing-2xl);

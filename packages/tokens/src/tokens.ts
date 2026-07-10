@@ -133,6 +133,16 @@ const primitives = {
         relaxed: 1.625,
         loose: 2,
     },
+
+    transition: {
+        duration: {
+            fast: '150ms',
+            base: '250ms',
+        },
+        easing: {
+            base: 'ease',
+        },
+    },
 } as const
 
 const semantics = {

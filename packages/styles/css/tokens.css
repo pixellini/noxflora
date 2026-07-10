@@ -99,6 +99,9 @@
     --nox-leading-normal: 1.5;
     --nox-leading-relaxed: 1.625;
     --nox-leading-loose: 2;
+    --nox-transition-duration-fast: 150ms;
+    --nox-transition-duration-base: 250ms;
+    --nox-transition-easing-base: ease;
     --nox-intent-primary-subtle: var(--nox-color-purple-light);
     --nox-intent-primary-default: var(--nox-color-purple-base);
     --nox-intent-primary-emphasis: var(--nox-color-purple-dark);
@@ -193,6 +196,13 @@
     --nox-inverse-foreground-subtle: var(--nox-color-slate-800);
     --nox-inverse-foreground-default: var(--nox-color-slate-800);
     --nox-inverse-foreground-emphasis: var(--nox-color-slate-800);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --nox-transition-duration-fast: 0ms;
+        --nox-transition-duration-base: 0ms;
+    }
 }
 
 [data-theme='light'] {
