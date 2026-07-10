@@ -168,7 +168,12 @@ const semantics = {
             emphasis: primitives.color.red.dark,
         },
         ring: {
-            default: primitives.color.purple.base,
+            primary: primitives.color.purple.base,
+            neutral: primitives.color.slate[500],
+            info: primitives.color.blue.base,
+            success: primitives.color.green.base,
+            warning: primitives.color.yellow.base,
+            danger: primitives.color.red.base,
         },
         foreground: {
             subtle: primitives.color.white,

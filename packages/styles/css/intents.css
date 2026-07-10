@@ -2,34 +2,40 @@
     --nox-intent-subtle: var(--nox-intent-primary-subtle);
     --nox-intent-default: var(--nox-intent-primary-default);
     --nox-intent-emphasis: var(--nox-intent-primary-emphasis);
+    --nox-intent-ring: var(--nox-intent-ring-primary);
 }
 
 [data-intent='neutral'] {
     --nox-intent-subtle: var(--nox-intent-neutral-subtle);
     --nox-intent-default: var(--nox-intent-neutral-default);
     --nox-intent-emphasis: var(--nox-intent-neutral-emphasis);
+    --nox-intent-ring: var(--nox-intent-ring-neutral);
 }
 
 [data-intent='info'] {
     --nox-intent-subtle: var(--nox-intent-info-subtle);
     --nox-intent-default: var(--nox-intent-info-default);
     --nox-intent-emphasis: var(--nox-intent-info-emphasis);
+    --nox-intent-ring: var(--nox-intent-ring-info);
 }
 
 [data-intent='success'] {
     --nox-intent-subtle: var(--nox-intent-success-subtle);
     --nox-intent-default: var(--nox-intent-success-default);
     --nox-intent-emphasis: var(--nox-intent-success-emphasis);
+    --nox-intent-ring: var(--nox-intent-ring-success);
 }
 
 [data-intent='warning'] {
     --nox-intent-subtle: var(--nox-intent-warning-subtle);
     --nox-intent-default: var(--nox-intent-warning-default);
     --nox-intent-emphasis: var(--nox-intent-warning-emphasis);
+    --nox-intent-ring: var(--nox-intent-ring-warning);
 }
 
 [data-intent='danger'] {
     --nox-intent-subtle: var(--nox-intent-danger-subtle);
     --nox-intent-default: var(--nox-intent-danger-default);
     --nox-intent-emphasis: var(--nox-intent-danger-emphasis);
+    --nox-intent-ring: var(--nox-intent-ring-danger);
 }

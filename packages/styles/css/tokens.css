@@ -117,7 +117,12 @@
     --nox-intent-danger-subtle: var(--nox-color-red-light);
     --nox-intent-danger-default: var(--nox-color-red-base);
     --nox-intent-danger-emphasis: var(--nox-color-red-dark);
-    --nox-intent-ring-default: var(--nox-color-purple-base);
+    --nox-intent-ring-primary: var(--nox-color-purple-base);
+    --nox-intent-ring-neutral: var(--nox-color-slate-500);
+    --nox-intent-ring-info: var(--nox-color-blue-base);
+    --nox-intent-ring-success: var(--nox-color-green-base);
+    --nox-intent-ring-warning: var(--nox-color-yellow-base);
+    --nox-intent-ring-danger: var(--nox-color-red-base);
     --nox-intent-foreground-subtle: var(--nox-color-white);
     --nox-intent-foreground-default: var(--nox-color-white);
     --nox-intent-foreground-emphasis: var(--nox-color-white);
