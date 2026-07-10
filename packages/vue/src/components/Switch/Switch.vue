@@ -31,8 +31,8 @@ const checked = defineModel<boolean>('checked', { default: false })
 
 <style lang="css" scoped>
 [data-part='root'] {
-    --switch-width: var(--nox-space-10);
-    --switch-height: var(--nox-space-6);
+    --switch-width: var(--nox-space-12);
+    --switch-height: var(--nox-space-7);
     --switch-thumb-size: var(--nox-space-5);
     --switch-transition: var(--nox-transition-duration-fast) var(--nox-transition-easing-base);
 
@@ -52,7 +52,6 @@ const checked = defineModel<boolean>('checked', { default: false })
     align-items: center;
     width: var(--switch-width);
     height: var(--switch-height);
-    border: var(--nox-border-base) solid var(--nox-border-default);
     border-radius: var(--nox-radius-md);
     background-color: var(--nox-surface-hover);
     transition:
@@ -84,7 +83,7 @@ const checked = defineModel<boolean>('checked', { default: false })
     height: var(--switch-thumb-size);
     margin-left: var(--nox-space-1);
     border-radius: var(--nox-radius-md);
-    background-color: var(--nox-fg-default);
+    background-color: var(--nox-surface-thumb);
     transition: transform var(--switch-transition);
 
     &[data-state='checked'] {
@@ -92,7 +91,7 @@ const checked = defineModel<boolean>('checked', { default: false })
     }
 
     &[data-disabled] {
-        background-color: var(--nox-disabled-foreground-default);
+        background-color: var(--nox-surface-thumb-disabled);
     }
 }
 

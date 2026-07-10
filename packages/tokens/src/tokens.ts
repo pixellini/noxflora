@@ -295,6 +295,8 @@ export const nox = createMode({
         active: primitives.color.slate[950],
         inverse: primitives.color.white,
         focus: primitives.color.slate[700],
+        thumb: primitives.color.white,
+        thumbDisabled: primitives.color.slate[300],
     },
     disabled: {
         default: primitives.color.slate[700],
@@ -334,6 +336,8 @@ export const lux = createMode({
         active: primitives.color.slate[200],
         inverse: primitives.color.slate[950],
         focus: primitives.color.slate[300],
+        thumb: primitives.color.white,
+        thumbDisabled: primitives.color.white,
     },
     disabled: {
         default: primitives.color.slate[100],

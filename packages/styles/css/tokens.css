@@ -179,6 +179,8 @@
     --nox-surface-active: var(--nox-color-slate-950);
     --nox-surface-inverse: var(--nox-color-white);
     --nox-surface-focus: var(--nox-color-slate-700);
+    --nox-surface-thumb: var(--nox-color-white);
+    --nox-surface-thumb-disabled: var(--nox-color-slate-300);
     --nox-disabled-default: var(--nox-color-slate-700);
     --nox-disabled-foreground-default: var(--nox-color-slate-600);
     --nox-fg-default: var(--nox-color-white);
@@ -211,6 +213,8 @@
     --nox-surface-active: var(--nox-color-slate-200);
     --nox-surface-inverse: var(--nox-color-slate-950);
     --nox-surface-focus: var(--nox-color-slate-300);
+    --nox-surface-thumb: var(--nox-color-white);
+    --nox-surface-thumb-disabled: var(--nox-color-white);
     --nox-disabled-default: var(--nox-color-slate-100);
     --nox-disabled-foreground-default: var(--nox-color-slate-300);
     --nox-fg-default: var(--nox-color-slate-950);
