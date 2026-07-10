@@ -7,6 +7,7 @@
         "apps/docs"
     ],
     "tasks": {
+        "dev": "deno task --filter @noxflora/vue dev",
         "build": "deno task --filter @noxflora/vue build",
         "lint": "deno task -r typecheck",
         "format": "deno fmt",

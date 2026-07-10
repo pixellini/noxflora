@@ -3,6 +3,10 @@
     "compilerOptions": {
         "noEmit": true,
         "allowImportingTsExtensions": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        },
         "jsx": "preserve",
         "lib": [
             "ES2022",

@@ -4,19 +4,18 @@ import type { NoxButtonProps } from './Button.types.ts'
 withDefaults(defineProps<NoxButtonProps>(), {
     variant: 'solid',
     intent: 'primary',
-    disabled: false,
     type: 'button',
-    block: false,
 })
 </script>
 
 <template>
     <button
-        :type="type"
-        :data-variant="variant"
-        :data-intent="intent"
         :data-block="block"
-        :disabled="disabled">
+        :data-intent="intent"
+        :data-variant="variant"
+        :disabled="disabled"
+        :id="id"
+        :type="type">
         <span v-if="$slots.leading" class="icon" aria-hidden="true">
             <slot name="leading" />
         </span>
@@ -33,6 +32,8 @@ withDefaults(defineProps<NoxButtonProps>(), {
 
 <style lang="css" scoped>
 button {
+    --button-transition: var(--nox-transition-duration-fast) var(--nox-transition-easing-base);
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -48,14 +49,17 @@ button {
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
-    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    transition:
+        background-color var(--button-transition),
+        border-color var(--button-transition),
+        color var(--button-transition);
 
     &[data-block="true"] {
         width: 100%;
     }
 
     &:focus-visible {
-        outline: var(--nox-border-2) solid var(--nox-intent-ring-default);
+        outline: var(--nox-border-2) solid var(--nox-intent-ring);
         outline-offset: var(--nox-border-2);
     }
 

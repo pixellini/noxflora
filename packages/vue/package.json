@@ -17,6 +17,7 @@
         "vue": "^3.5.0"
     },
     "dependencies": {
+        "@ark-ui/vue": "^5.37.2",
         "@noxflora/styles": "workspace:*"
     },
     "devDependencies": {

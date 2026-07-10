@@ -1,13 +1,14 @@
-export type NoxButtonIntent = 'primary' | 'neutral' | 'info' | 'success' | 'warning' | 'danger'
+import type { NoxIntent } from '@/shared/types.ts'
 
 export type NoxButtonVariant = 'solid' | 'ghost'
 
 export type NoxButtonType = 'button' | 'submit' | 'reset'
 
 export interface NoxButtonProps {
-    variant?: NoxButtonVariant
-    intent?: NoxButtonIntent
-    disabled?: boolean
-    type?: NoxButtonType
     block?: boolean
+    disabled?: boolean
+    id?: string
+    intent?: NoxIntent
+    type?: NoxButtonType
+    variant?: NoxButtonVariant
 }
