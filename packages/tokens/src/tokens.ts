@@ -295,23 +295,27 @@ export const nox = createMode({
         active: primitives.color.slate[950],
         inverse: primitives.color.white,
         focus: primitives.color.slate[700],
-        thumb: primitives.color.white,
-        thumbDisabled: primitives.color.slate[300],
+        input: {
+            default: primitives.color.slate[700],
+            disabled: primitives.color.slate[800],
+        },
+        thumb: {
+            default: primitives.color.white,
+            disabled: primitives.color.slate[300],
+        },
     },
     disabled: {
         default: primitives.color.slate[700],
-        foreground: {
-            default: primitives.color.slate[600],
-        },
     },
     fg: {
         default: primitives.color.white,
         muted: primitives.color.slate[500],
         inverse: primitives.color.slate[950],
+        disabled: primitives.color.slate[800],
     },
     border: {
-        default: primitives.color.slate[800],
-        hover: primitives.color.slate[600],
+        default: primitives.color.slate[600],
+        hover: primitives.color.slate[400],
         active: primitives.color.slate[600],
         inverse: primitives.color.white,
         disabled: primitives.color.slate[600],
@@ -336,23 +340,27 @@ export const lux = createMode({
         active: primitives.color.slate[200],
         inverse: primitives.color.slate[950],
         focus: primitives.color.slate[300],
-        thumb: primitives.color.white,
-        thumbDisabled: primitives.color.white,
+        input: {
+            default: primitives.color.slate[100],
+            disabled: primitives.color.slate[100],
+        },
+        thumb: {
+            default: primitives.color.white,
+            disabled: primitives.color.white,
+        },
     },
     disabled: {
         default: primitives.color.slate[100],
-        foreground: {
-            default: primitives.color.slate[300],
-        },
     },
     fg: {
         default: primitives.color.slate[950],
         muted: primitives.color.slate[600],
         inverse: primitives.color.white,
+        disabled: primitives.color.slate[300],
     },
     border: {
-        default: primitives.color.slate[400],
-        hover: primitives.color.slate[500],
+        default: primitives.color.slate[200],
+        hover: primitives.color.slate[300],
         active: primitives.color.slate[600],
         inverse: primitives.color.slate[800],
         disabled: primitives.color.slate[400],

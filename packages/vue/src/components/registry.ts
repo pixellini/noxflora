@@ -1,5 +1,6 @@
 import NoxButton from './Button/Button.vue'
 import NoxSwitch from './Switch/Switch.vue'
+import NoxField from './Field/Field.vue'
 
 declare module 'vue' {
     export interface GlobalComponents extends NoxComponents {}
@@ -8,6 +9,7 @@ declare module 'vue' {
 export const components = {
     NoxButton,
     NoxSwitch,
+    NoxField,
 }
 
 type NoxComponents = typeof components

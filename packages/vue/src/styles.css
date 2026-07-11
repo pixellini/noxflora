@@ -1,0 +1,16 @@
+.nox-focusable {
+    &:focus-visible,
+    &[data-focus] {
+        outline: var(--nox-border-2) solid var(--nox-intent-ring);
+        outline-offset: var(--nox-border-2);
+    }
+}
+
+.nox-label {
+    font-size: var(--nox-font-size-base);
+    color: var(--nox-fg-default);
+
+    &[data-disabled] {
+        color: var(--nox-fg-disabled);
+    }
+}

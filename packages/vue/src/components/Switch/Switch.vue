@@ -21,10 +21,14 @@ const checked = defineModel<boolean>('checked', { default: false })
         :read-only="readonly"
         :required="required"
         :value="value">
-        <Switch.Control>
+        <Switch.Control class="nox-focusable">
             <Switch.Thumb />
         </Switch.Control>
-        <Switch.Label v-if="label">{{ label }}</Switch.Label>
+        <Switch.Label
+            v-if="label"
+            class="nox-label">
+            {{ label }}
+        </Switch.Label>
         <Switch.HiddenInput />
     </Switch.Root>
 </template>
@@ -58,11 +62,6 @@ const checked = defineModel<boolean>('checked', { default: false })
         background-color var(--switch-transition),
         border-color var(--switch-transition);
 
-    &[data-focus] {
-        outline: var(--nox-border-2) solid var(--nox-intent-ring);
-        outline-offset: var(--nox-border-2);
-    }
-
     &[data-state='checked'] {
         border-color: transparent;
         background-color: var(--nox-intent-default);
@@ -83,7 +82,7 @@ const checked = defineModel<boolean>('checked', { default: false })
     height: var(--switch-thumb-size);
     margin-left: var(--nox-space-1);
     border-radius: var(--nox-radius-md);
-    background-color: var(--nox-surface-thumb);
+    background-color: var(--nox-surface-thumb-default);
     transition: transform var(--switch-transition);
 
     &[data-state='checked'] {
@@ -97,11 +96,5 @@ const checked = defineModel<boolean>('checked', { default: false })
 
 [data-part='label'] {
     font-family: var(--nox-font-family-sans);
-    font-size: var(--nox-font-size-base);
-    color: var(--nox-fg-default);
-
-    &[data-disabled] {
-        color: var(--nox-disabled-foreground-default);
-    }
 }
 </style>

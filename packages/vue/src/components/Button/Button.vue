@@ -10,13 +10,16 @@ withDefaults(defineProps<NoxButtonProps>(), {
 
 <template>
     <button
+        class="nox-focusable"
         :data-block="block"
         :data-intent="intent"
         :data-variant="variant"
         :disabled="disabled"
         :id="id"
         :type="type">
-        <span v-if="$slots.leading" class="icon" aria-hidden="true">
+        <span v-if="$slots.leading"
+            class="icon"
+            aria-hidden="true">
             <slot name="leading" />
         </span>
 
@@ -24,7 +27,9 @@ withDefaults(defineProps<NoxButtonProps>(), {
             <slot />
         </span>
 
-        <span v-if="$slots.trailing" class="icon" aria-hidden="true">
+        <span v-if="$slots.trailing"
+            class="icon"
+            aria-hidden="true">
             <slot name="trailing" />
         </span>
     </button>
@@ -58,11 +63,6 @@ button {
         width: 100%;
     }
 
-    &:focus-visible {
-        outline: var(--nox-border-2) solid var(--nox-intent-ring);
-        outline-offset: var(--nox-border-2);
-    }
-
     &:disabled {
         cursor: not-allowed;
     }
@@ -82,7 +82,7 @@ button {
         &:disabled {
             border-color: transparent;
             background-color: var(--nox-disabled-default);
-            color: var(--nox-disabled-foreground-default);
+            color: var(--nox-fg-disabled);
         }
     }
 
@@ -96,7 +96,7 @@ button {
         }
 
         &:disabled {
-            color: var(--nox-disabled-foreground-default);
+            color: var(--nox-fg-disabled);
         }
     }
 }

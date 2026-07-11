@@ -2,6 +2,7 @@ import '@noxflora/styles/tokens.css'
 import '@noxflora/styles/intents.css'
 import '@noxflora/styles/base.css'
 import '@noxflora/styles/prose.css'
+import './styles.css'
 
 // Plugin
 export * from './plugin.ts'
@@ -15,3 +16,6 @@ export { default as NoxButton } from './components/Button/Button.vue'
 
 export * from './components/Switch/Switch.types.ts'
 export { default as NoxSwitch } from './components/Switch/Switch.vue'
+
+export * from './components/Field/Field.types.ts'
+export { default as NoxField } from './components/Field/Field.vue'

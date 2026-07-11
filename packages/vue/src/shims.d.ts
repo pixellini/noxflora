@@ -1,5 +1,1 @@
-declare module '@noxflora/styles/tokens.css'
-declare module '@noxflora/styles/intents.css'
-declare module '@noxflora/styles/fonts.css'
-declare module '@noxflora/styles/base.css'
-declare module '@noxflora/styles/prose.css'
+declare module '*.css'
