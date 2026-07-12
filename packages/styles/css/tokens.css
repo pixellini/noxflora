@@ -188,7 +188,7 @@
     --nox-fg-muted: var(--nox-color-slate-500);
     --nox-fg-inverse: var(--nox-color-slate-950);
     --nox-fg-disabled: var(--nox-color-slate-600);
-    --nox-border-default: var(--nox-color-slate-600);
+    --nox-border-default: var(--nox-color-slate-700);
     --nox-border-hover: var(--nox-color-slate-400);
     --nox-border-active: var(--nox-color-slate-600);
     --nox-border-inverse: var(--nox-color-white);
@@ -224,7 +224,7 @@
     --nox-fg-muted: var(--nox-color-slate-600);
     --nox-fg-inverse: var(--nox-color-white);
     --nox-fg-disabled: var(--nox-color-slate-300);
-    --nox-border-default: var(--nox-color-slate-200);
+    --nox-border-default: var(--nox-color-slate-100);
     --nox-border-hover: var(--nox-color-slate-300);
     --nox-border-inverse: var(--nox-color-slate-800);
     --nox-border-disabled: var(--nox-color-slate-400);

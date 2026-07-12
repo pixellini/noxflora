@@ -314,7 +314,7 @@ export const nox = createMode({
         disabled: primitives.color.slate[800],
     },
     border: {
-        default: primitives.color.slate[600],
+        default: primitives.color.slate[700],
         hover: primitives.color.slate[400],
         active: primitives.color.slate[600],
         inverse: primitives.color.white,
@@ -359,7 +359,7 @@ export const lux = createMode({
         disabled: primitives.color.slate[300],
     },
     border: {
-        default: primitives.color.slate[200],
+        default: primitives.color.slate[100],
         hover: primitives.color.slate[300],
         active: primitives.color.slate[600],
         inverse: primitives.color.slate[800],
